@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>avellon | DMV</title>
+
+    <!------------------- * TailwindCSS current version * ------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!------------------- * Feather v4.29.0 * ------------------->
+    <script src="js/feather.min.js"></script>
+
+    <!------------------- * Google Fonts * ------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="main.css" rel="stylesheet" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body
+    style="background: transparent !important"
+    class="pb-20 grid h-screen w-screen place-items-center"
+  >
+    <div
+      id="av_dmv_main"
+      class="hidden mx-auto bg-gray-900 rounded-xl shadow-md overflow-hidden w-3/6"
+    >
+      <div class="flex flex-row-reverse text-white pt-3 pr-3">
+        <!-- set the color of the close btn to white -->
+        <div id="av_dmv_close"><i data-feather="x"></i></div>
+      </div>
+      <!-- Start page -->
+      <h1 id="av_dmv_h1" class="text-xl pl-12 text-white">DMV</h1>
+      <h2 id="av_dmv_h2" class="text-sm pl-12 text-gray-200">Los Santos</h2>
+      <div
+        id="av_dmv_page_start"
+        class="hidden page h-auto p-5 grid grid-cols-2 pt-10"
+      >
+        <div
+          id="av_dmv_page_start_left"
+          class="h-4/5 p-5 flex flex-row flex-wrap place-content-center gap-2"
+        ></div>
+        <div
+          id="av_dmv_page_start_right"
+          class="h-4/5 p-5 flex flex-row flex-wrap place-content-center gap-2"
+        ></div>
+      </div>
+      <!-- theory page -->
+      <div
+        id="av_dmv_page_theory"
+        class="hidden page row grid h-100 p-5 g-2 justify-content-center align-items-center"
+      ></div>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+  </script>
+</html>
